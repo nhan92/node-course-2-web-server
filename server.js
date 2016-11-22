@@ -52,6 +52,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    paperTitle: 'Projects'
+  });
+});
+
 // bad -send back json woth errorMessage
 app.get('/bad', (req, res) => {
   res.send({
